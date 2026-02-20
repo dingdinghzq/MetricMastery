@@ -1,0 +1,257 @@
+:root {
+  --bg: #f4f7ff;
+  --card: #ffffff;
+  --ink: #1b1e3a;
+  --accent: #6a5cff;
+  --accent-2: #ff5da2;
+  --green: #16a34a;
+  --red: #dc2626;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top right, #fff0f8, #eef5ff 40%, #e9f7ff);
+  color: var(--ink);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-blob {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.22;
+}
+
+.blob1 { background: #7c3aed; top: -120px; left: -100px; }
+.blob2 { background: #f97316; bottom: -120px; right: -80px; }
+
+.card {
+  width: min(920px, 100%);
+  background: var(--card);
+  border: 2px solid #dbe3ff;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(60, 72, 140, 0.18);
+  padding: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #4d5488;
+}
+
+.panel {
+  margin-top: 20px;
+  padding: 18px;
+  border: 2px dashed #c8d3ff;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+  color: #4450a0;
+}
+
+.clue-box {
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #edf2ff;
+  border: 1px solid #cfd9ff;
+}
+
+.clue-box p { margin: 6px 0; }
+
+.question-text {
+  font-size: 1.02rem;
+}
+
+.question-image-wrap {
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #cfd9ff;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.question-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.choice {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 2px solid #d7defa;
+  background: #fff;
+  color: #202860;
+  text-align: left;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.choice:hover:enabled {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(90, 109, 206, 0.2);
+}
+
+.choice:disabled {
+  cursor: default;
+}
+
+.choice.correct {
+  border-color: #86efac;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.choice.wrong {
+  border-color: #fca5a5;
+  background: #fff1f2;
+  color: #9f1239;
+}
+
+.feedback-row {
+  min-height: 30px;
+  margin: 10px 0 4px;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.short-answer-box {
+  margin-top: 10px;
+}
+
+.short-input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.short-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 2px solid #d7defa;
+  font-size: 0.98rem;
+  color: #202860;
+}
+
+.short-input:focus {
+  outline: none;
+  border-color: #9aa7f5;
+  box-shadow: 0 0 0 3px rgba(122, 140, 255, 0.15);
+}
+
+.hint {
+  margin: 10px 0 2px;
+  color: #4d5488;
+  font-size: 0.92rem;
+}
+
+.btn {
+  margin-top: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(120, 90, 255, 0.35);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.big-score {
+  font-size: 1.15rem;
+}
+
+.result-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0;
+  max-height: 320px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.result-item {
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+  border: 1px solid #d6defa;
+  background: #f8faff;
+}
+
+.result-item.ok {
+  border-color: #a7f3d0;
+  background: #f0fdf4;
+}
+
+.result-item.nope {
+  border-color: #fecaca;
+  background: #fff1f2;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+}
