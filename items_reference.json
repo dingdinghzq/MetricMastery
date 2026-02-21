@@ -15,8 +15,9 @@
     "derived_metrics": {
       "surface_area_cm2": 603.2
     },
-    "image_url": "https://d2me12yo8rr0o0.cloudfront.net/wp-content/uploads/ANSI-Paper-sizes-scaled.jpg",
-    "image_source_page": "https://www.doxdirect.com/blog/paper-sizes-explained-the-difference-between-a4-and-letter/"
+    "image_url": "/item-images/us_letter_20lb_sheet.webp",
+    "image_source_page": "https://www.doxdirect.com/blog/paper-sizes-explained-the-difference-between-a4-and-letter/",
+    "image_local": true
   },
   {
     "item_key": "postit_3x3_note",
@@ -34,8 +35,9 @@
     "derived_metrics": {
       "surface_area_cm2": 58.1
     },
-    "image_url": "https://i5.walmartimages.com/seo/The-Home-Edit-Sticky-Note-Edit-Rainbow_23b4f718-f0ed-48bc-ae3f-38c0e7622d4a.4c5ba2815a69d06838b7ee92c5bfde51.jpeg",
-    "image_source_page": "https://www.walmart.com/ip/The-Home-Edit-Sticky-Note-Edit-Rainbow/1687752223"
+    "image_url": "/item-images/postit_3x3_note.webp",
+    "image_source_page": "https://www.walmart.com/ip/The-Home-Edit-Sticky-Note-Edit-Rainbow/1687752223",
+    "image_local": true
   },
   {
     "item_key": "usd_1_note",
@@ -53,8 +55,9 @@
     "derived_metrics": {
       "surface_area_cm2": 103.4
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/US-%241-FRBN-1918-Fr.713.jpg",
-    "image_source_page": "https://en.wikipedia.org/wiki/File:US-$1-FRBN-1918-Fr.713.jpg"
+    "image_url": "/item-images/usd_1_note.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/File:US-$1-FRBN-1918-Fr.713.jpg",
+    "image_local": true
   },
   {
     "item_key": "pencil_no2_wood",
@@ -69,8 +72,9 @@
       "kind": "length",
       "length": 190
     },
-    "image_url": "https://i5.walmartimages.com/seo/Pen-Gear-No-2-Wood-Pencils-Unsharpened-24-Count-4-pack_d073c11d-bd34-4c0d-8074-dad1131e6f14.cb7bcadf542292279c2fbd21cd8807ba.jpeg",
-    "image_source_page": "http://www.scrumptiouscateringkc.com/SIKAO-2-HB-Pencils-100-Pack-Unsharpened-Wood-Pencils-With-o-1247272"
+    "image_url": "/item-images/pencil_no2_wood.webp",
+    "image_source_page": "http://www.scrumptiouscateringkc.com/SIKAO-2-HB-Pencils-100-Pack-Unsharpened-Wood-Pencils-With-o-1247272",
+    "image_local": true
   },
   {
     "item_key": "mechanical_pencil_05",
@@ -85,8 +89,9 @@
       "kind": "length",
       "length": 145
     },
-    "image_url": "https://newellbrands.imgix.net/68e7804c-71e7-3b81-89cd-09b9fa974d59/68e7804c-71e7-3b81-89cd-09b9fa974d59.jpg",
-    "image_source_page": "https://www.papermate.com/pencils/mechanical-pencils/paper-mate-clearpoint-mechanical-pencil-sets-0.9mm-hb-2-lead/SP_1669840.html"
+    "image_url": "/item-images/mechanical_pencil_05.webp",
+    "image_source_page": "https://www.papermate.com/pencils/mechanical-pencils/paper-mate-clearpoint-mechanical-pencil-sets-0.9mm-hb-2-lead/SP_1669840.html",
+    "image_local": true
   },
   {
     "item_key": "paperclip_no1",
@@ -100,8 +105,9 @@
       "kind": "length",
       "length": 28
     },
-    "image_url": "https://i5.walmartimages.com/asr/bfb27934-1f13-4edb-bf33-bb1364677931.ac94dafb9f73133a0b6b30b88c5074dc.jpeg",
-    "image_source_page": "https://www.randstadfiscaal.nl/itm/Size-No-1-Bulk-Pack-For-Office-School-Or-Home/453101"
+    "image_url": "/item-images/paperclip_no1.webp",
+    "image_source_page": "https://www.randstadfiscaal.nl/itm/Size-No-1-Bulk-Pack-For-Office-School-Or-Home/453101",
+    "image_local": true
   },
   {
     "item_key": "binder_clip_small_19mm",
@@ -115,8 +121,9 @@
       "kind": "width",
       "width": 19
     },
-    "image_url": "https://images.heb.com/is/image/HEBGrocery/009223034-1",
-    "image_source_page": "https://www.dogranchinc.ca/fashion/?q=Clips-1-Inch-Black-Metal-Paper-Clips-8-Pack-For-Home-Office/378971"
+    "image_url": "/item-images/binder_clip_small_19mm.webp",
+    "image_source_page": "https://www.dogranchinc.ca/fashion/?q=Clips-1-Inch-Black-Metal-Paper-Clips-8-Pack-For-Home-Office/378971",
+    "image_local": true
   },
   {
     "item_key": "pink_block_eraser",
@@ -136,8 +143,9 @@
       "volume_ml": 12,
       "surface_area_cm2": 40
     },
-    "image_url": "https://judgeme.imgix.net/bazicstore/1631918526__0__XEz5srxM__C1oY9DejEfS__original.jpg?auto=format&w=160?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-    "image_source_page": "https://www.mctangen.dk/Free-Block-Erasers-For-School-Office-Art-d-437162"
+    "image_url": "/item-images/pink_block_eraser.webp",
+    "image_source_page": "https://www.mctangen.dk/Free-Block-Erasers-For-School-Office-Art-d-437162",
+    "image_local": true
   },
   {
     "item_key": "glue_stick_small",
@@ -151,8 +159,9 @@
       "kind": "height",
       "height": 75
     },
-    "image_url": "https://alltopbargains.info/webpictures9/2282022925-2.jpg",
-    "image_source_page": "https://www.ebay.com/itm/226820332679"
+    "image_url": "/item-images/glue_stick_small.webp",
+    "image_source_page": "https://www.ebay.com/itm/226820332679",
+    "image_local": true
   },
   {
     "item_key": "aa_lr6_battery",
@@ -171,8 +180,9 @@
       "volume_ml": 8.3,
       "surface_area_cm2": 26.3
     },
-    "image_url": "https://www.bhphotovideo.com/images/fb/panasonic_pan12aa_aa_1_5v_alkaline_battery_1073512.jpg",
-    "image_source_page": "https://www.bhphotovideo.com/c/product/1073512-REG/panasonic_pan12aa_aa_1_5v_alkaline_battery.html"
+    "image_url": "/item-images/aa_lr6_battery.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/AA_battery",
+    "image_local": true
   },
   {
     "item_key": "aaa_lr03_battery",
@@ -191,8 +201,9 @@
       "volume_ml": 3.9,
       "surface_area_cm2": 16.5
     },
-    "image_url": "http://www.papershoot.com/cdn/shop/files/Battery_GPTx2.png?v=1751273477",
-    "image_source_page": "https://www.papershoot.com/products/aaa-battery?srsltid=AfmBOoqbLhVgrdj93KT9l4W6Zq4uiwEUDCOt3wKSDl9P6o4lZy9NGzas"
+    "image_url": "/item-images/aaa_lr03_battery.webp",
+    "image_source_page": "https://www.papershoot.com/products/aaa-battery?srsltid=AfmBOoqbLhVgrdj93KT9l4W6Zq4uiwEUDCOt3wKSDl9P6o4lZy9NGzas",
+    "image_local": true
   },
   {
     "item_key": "pp3_9v_battery",
@@ -213,8 +224,9 @@
       "volume_ml": 22.5,
       "surface_area_cm2": 43.3
     },
-    "image_url": "https://external-preview.redd.it/the-insides-of-9v-battery-v0-861h9lDPWOH7bO4gnVr5GRoQ4FfYga-SsrgjqgX3Iys.jpg?auto=webp&s=88ab9ba09695be2ccd916ec515d1ad870d15bded",
-    "image_source_page": "https://www.reddit.com/r/diyelectronics/comments/113xk4j/the_insides_of_9v_battery/"
+    "image_url": "/item-images/pp3_9v_battery.jpg",
+    "image_source_page": "https://www.reddit.com/r/diyelectronics/comments/113xk4j/the_insides_of_9v_battery/",
+    "image_local": true
   },
   {
     "item_key": "cr2032_coin_cell",
@@ -233,8 +245,9 @@
       "volume_ml": 1,
       "surface_area_cm2": 8.3
     },
-    "image_source_page": "https://www.bhphotovideo.com/c/product/1692771-REG/maxell_413_lithium_cr2032_batteries_5_pack.html",
-    "image_url": "https://www.bhphotovideo.com/images/fb/maxell_413_lithium_cr2032_batteries_5_pack_1692771.jpg"
+    "image_source_page": "https://en.wikipedia.org/wiki/Button_cell",
+    "image_url": "/item-images/cr2032_coin_cell.webp",
+    "image_local": true
   },
   {
     "item_key": "us_penny",
@@ -253,8 +266,9 @@
       "volume_ml": 0.43,
       "surface_area_cm2": 6.6
     },
-    "image_url": "https://images.vcoins.com/product_image/239/P/pE4J6gFQN7yyowK38bgSzBZ25Mq5s3.jpg",
-    "image_source_page": "https://www.vcoins.com/en/stores/numiscorner/239/product/coin_united_states_lincoln_cent_cent_1988_us_mint_philadelphia/1951698/Default.aspx"
+    "image_url": "/item-images/us_penny.webp",
+    "image_source_page": "https://www.vcoins.com/en/stores/numiscorner/239/product/coin_united_states_lincoln_cent_cent_1988_us_mint_philadelphia/1951698/Default.aspx",
+    "image_local": true
   },
   {
     "item_key": "us_nickel",
@@ -273,8 +287,9 @@
       "volume_ml": 0.69,
       "surface_area_cm2": 8.4
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/NNC-US-1913-5C-Buffalo_Nickel_%28TyI-mound%29.jpg",
-    "image_source_page": "https://en.wikipedia.org/wiki/Buffalo_nickel"
+    "image_url": "/item-images/us_nickel.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Buffalo_nickel",
+    "image_local": true
   },
   {
     "item_key": "us_dime",
@@ -293,8 +308,9 @@
       "volume_ml": 0.34,
       "surface_area_cm2": 5.8
     },
-    "image_url": "http://www.unitedstatesrarecoin.com/cdn/shop/files/IMG_8675.heic?v=1738869213",
-    "image_source_page": "https://www.unitedstatesrarecoin.com/products/1955-10c-us-roosevelt-dime-copy?srsltid=AfmBOorHnUH862jNY3ZkqOfhJocXjtwlKmO9lq3iHsFfK4YnlRgGq2zQ"
+    "image_url": "/item-images/us_dime.webp",
+    "image_source_page": "https://www.unitedstatesrarecoin.com/products/1955-10c-us-roosevelt-dime-copy?srsltid=AfmBOorHnUH862jNY3ZkqOfhJocXjtwlKmO9lq3iHsFfK4YnlRgGq2zQ",
+    "image_local": true
   },
   {
     "item_key": "us_quarter",
@@ -314,7 +330,8 @@
       "surface_area_cm2": 10.6
     },
     "image_source_page": "https://www.unitedstatesrarecoin.com/products/1915-50c-us-barber-quarter-dollar-copy-1?srsltid=AfmBOorKz3aqjPgxn_XeeIg7S11oakej8DLv7H1Pdq78FhppIWrptV6s",
-    "image_url": "http://www.unitedstatesrarecoin.com/cdn/shop/files/IMG_1911.heic?v=1753734960"
+    "image_url": "/item-images/us_quarter.webp",
+    "image_local": true
   },
   {
     "item_key": "table_grape",
@@ -332,8 +349,9 @@
       "volume_ml": 4.2,
       "surface_area_cm2": 12.6
     },
-    "image_url": "https://www.wineberserkers.com/uploads/db0731/original/4X/1/5/c/15c856aaff04444c380bb60a9532a0fddbfc6cf4.jpeg",
-    "image_source_page": "https://www.wineberserkers.com/t/table-eating-grapes-crunchier/339848"
+    "image_url": "/item-images/table_grape.webp",
+    "image_source_page": "https://www.wineberserkers.com/t/table-eating-grapes-crunchier/339848",
+    "image_local": true
   },
   {
     "item_key": "tennis_ball_itf",
@@ -353,8 +371,9 @@
       "volume_ml": 157.5,
       "surface_area_cm2": 141
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Roland_Garros_2012_Ballkid.jpg",
-    "image_source_page": "https://en.wikipedia.org/wiki/Tennis_ball"
+    "image_url": "/item-images/tennis_ball_itf.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Tennis_ball",
+    "image_local": true
   },
   {
     "item_key": "golf_ball_usga",
@@ -372,12 +391,13 @@
       "volume_ml": 40.7,
       "surface_area_cm2": 57.2
     },
-    "image_url": "https://branded.disruptsports.com/cdn/shop/articles/how-golf-balls-are-made.jpg?v=1770201034",
-    "image_source_page": "https://branded.disruptsports.com/blogs/blog/how-golf-balls-are-made"
+    "image_url": "/item-images/golf_ball_usga.webp",
+    "image_source_page": "https://branded.disruptsports.com/blogs/blog/how-golf-balls-are-made",
+    "image_local": true
   },
   {
     "item_key": "table_tennis_ball_40",
-    "display_name": "Table tennis ball 40+ mm (ITTF)",
+    "display_name": "Table tennis ball (ITTF)",
     "category": "sports",
     "standard_level": "regulated_standard",
     "mass_g": {
@@ -392,7 +412,8 @@
       "surface_area_cm2": 50.3
     },
     "image_source_page": "https://uzdrowisko-kamienpomorski.pl/Pack-Table-Tennis-Balls-40mm-White-Durable-Plastic-For-1115631",
-    "image_url": "https://i5.walmartimages.com/asr/bf37dbd0-0c9d-4587-8358-1d64305fe038.2ca5540be0c719eb4085acf3fe5749c8.jpeg"
+    "image_url": "/item-images/table_tennis_ball_40.webp",
+    "image_local": true
   },
   {
     "item_key": "baseball_mlb",
@@ -412,8 +433,9 @@
       "volume_ml": 212.2,
       "surface_area_cm2": 172
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Tommy_Milone_gives_up_a_home_run_to_Mike_Trout_on_May_21%2C_2017.jpg",
-    "image_source_page": "https://en.wikipedia.org/wiki/Baseball"
+    "image_url": "/item-images/baseball_mlb.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Baseball",
+    "image_local": true
   },
   {
     "item_key": "rubiks_cube_3x3",
@@ -432,12 +454,13 @@
       "volume_ml": 175.6,
       "surface_area_cm2": 188.2
     },
-    "image_url": "http://shop.spinmaster.com/cdn/shop/products/swhszxabdknvjjijtndo.jpg?v=1745608079",
-    "image_source_page": "https://shop.spinmaster.com/products/rubiks-3x3-phantom-6064627?srsltid=AfmBOopmiqf0fM9VIoRZZutAn-N2ZG6VVkJ_2fQUdx6UCCEvP9dVIGZP"
+    "image_url": "/item-images/rubiks_cube_3x3.webp",
+    "image_source_page": "https://shop.spinmaster.com/products/rubiks-3x3-phantom-6064627?srsltid=AfmBOopmiqf0fM9VIoRZZutAn-N2ZG6VVkJ_2fQUdx6UCCEvP9dVIGZP",
+    "image_local": true
   },
   {
     "item_key": "dice_d6_16mm",
-    "display_name": "Six-sided die (16 mm)",
+    "display_name": "Six-sided die",
     "category": "game",
     "standard_level": "common_typical",
     "mass_g": {
@@ -452,8 +475,9 @@
       "volume_ml": 4.1,
       "surface_area_cm2": 15.4
     },
-    "image_url": "https://nlpamerica.com/wp-content/uploads/2021/03/12-sided-polyhedral-dice-scaled.jpg",
-    "image_source_page": "https://www.rsi-informatique.fr/Number-Dice-Round-Corner-Polyhedral-Dice-Polyhedral-Dice-Role/890123"
+    "image_url": "/item-images/dice_d6_16mm.webp",
+    "image_source_page": "https://www.rsi-informatique.fr/Number-Dice-Round-Corner-Polyhedral-Dice-Polyhedral-Dice-Role/890123",
+    "image_local": true
   },
   {
     "item_key": "smartphone_slab",
@@ -474,8 +498,9 @@
       "volume_ml": 84,
       "surface_area_cm2": 243.2
     },
-    "image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6706x4473+0+0/resize/6706x4473!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F14%2F93%2F57db636c4e3a9719a53d87d5e834%2Fgettyimages-2208634662.jpg",
-    "image_source_page": "https://www.npr.org/2025/04/12/nx-s1-5363025/apple-iphone-tariff-exemption-china"
+    "image_url": "/item-images/smartphone_slab.webp",
+    "image_source_page": "https://www.npr.org/2025/04/12/nx-s1-5363025/apple-iphone-tariff-exemption-china",
+    "image_local": true
   },
   {
     "item_key": "tv_remote_handheld",
@@ -491,8 +516,9 @@
       "length": 190,
       "approximate": true
     },
-    "image_url": "https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/835d9bc4-f059-11f0-bf58-f6640f71bb94.jpg",
-    "image_source_page": "https://www.sharpconsumer.com/tv-remote-control/an2303b2026b/"
+    "image_url": "/item-images/tv_remote_handheld.webp",
+    "image_source_page": "https://www.sharpconsumer.com/tv-remote-control/an2303b2026b/",
+    "image_local": true
   },
   {
     "item_key": "manual_toothbrush",
@@ -506,8 +532,9 @@
       "kind": "length",
       "length": 190
     },
-    "image_url": "https://www.farmacosmo.com/2038541-original_fc/suavinex-oralcare-junior-manual-toothbrush-6-years-with-blue-protective-cover.jpg",
-    "image_source_page": "https://www.farmacosmo.com/baby-child/suavinex-oralcare-junior-manual-toothbrush-6-years-with-blue-protective-cover-236432/"
+    "image_url": "/item-images/manual_toothbrush.webp",
+    "image_source_page": "https://www.farmacosmo.com/baby-child/suavinex-oralcare-junior-manual-toothbrush-6-years-with-blue-protective-cover-236432/",
+    "image_local": true
   },
   {
     "item_key": "soap_bar_standard",
@@ -527,8 +554,9 @@
       "volume_ml": 135,
       "surface_area_cm2": 183
     },
-    "image_url": "https://shopcommunityathens.com/cdn/shop/files/rinsesoap2.jpg?v=1715948486&width=3456",
-    "image_source_page": "https://shopcommunityathens.com/products/natural-soap-bar?srsltid=AfmBOooktYNKMXAsAi8R0pkRhYok9wzH4MFnMDPFkqDzyaKnHk4Mcl69"
+    "image_url": "/item-images/soap_bar_standard.webp",
+    "image_source_page": "https://shopcommunityathens.com/products/natural-soap-bar?srsltid=AfmBOooktYNKMXAsAi8R0pkRhYok9wzH4MFnMDPFkqDzyaKnHk4Mcl69",
+    "image_local": true
   },
   {
     "item_key": "table_spoon_metal",
@@ -542,8 +570,9 @@
       "kind": "length",
       "length": 150
     },
-    "image_url": "https://cdn.shopify.com/s/files/1/2304/7781/t/228/assets/547ec4976186--MetalSpoon-03-59134b.jpg?v=1695251735",
-    "image_source_page": "https://materialkitchen.com/products/the-metal-spoon"
+    "image_url": "/item-images/table_spoon_metal.webp",
+    "image_source_page": "https://materialkitchen.com/products/the-metal-spoon",
+    "image_local": true
   },
   {
     "item_key": "water_bottle_500ml_full",
@@ -561,12 +590,13 @@
     "derived_metrics": {
       "volume_ml": 500
     },
-    "image_url": "https://productimages.withfloats.com/actual/66f808e9ed4775b0022c2efc.jpeg",
-    "image_source_page": "https://www.pothigaiaqua.com/products/500-ml-bottled-water-24-pack-case/3"
+    "image_url": "/item-images/water_bottle_500ml_full.webp",
+    "image_source_page": "https://www.pothigaiaqua.com/products/500-ml-bottled-water-24-pack-case/3",
+    "image_local": true
   },
   {
     "item_key": "water_bottle_cap_28mm",
-    "display_name": "Water bottle cap (28 mm finish)",
+    "display_name": "Water bottle cap (screw cap)",
     "category": "container",
     "standard_level": "common_typical",
     "mass_g": {
@@ -576,12 +606,13 @@
       "kind": "disc",
       "diameter": 28
     },
-    "image_url": "https://ae01.alicdn.com/kf/Sd9f252e7d5614f71ab2f73a0e121a095v/Aquafina-Water-Bottle-Diversion-Safe-Can-Stash-Hidden-Security-Container-With-A-Food-Grade-Smell-Proof.jpg",
-    "image_source_page": "http://vinskaakademija.com/Diversion-Safe-Hidden-Secret-Compartment-Stash-Container-y-919511"
+    "image_url": "/item-images/water_bottle_cap_28mm.webp",
+    "image_source_page": "http://vinskaakademija.com/Diversion-Safe-Hidden-Secret-Compartment-Stash-Container-y-919511",
+    "image_local": true
   },
   {
     "item_key": "golf_tee_70mm",
-    "display_name": "Golf tee (70 mm)",
+    "display_name": "Golf tee (Medium size)",
     "category": "sports",
     "standard_level": "common_typical",
     "mass_g": {
@@ -593,7 +624,8 @@
       "length": 70
     },
     "image_source_page": "https://en.wikipedia.org/wiki/Tee",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Golf_Club_at_Wescott_Plantation_%289321187216%29.jpg"
+    "image_url": "/item-images/golf_tee_70mm.webp",
+    "image_local": true
   },
   {
     "item_key": "playing_card_poker",
@@ -611,8 +643,9 @@
     "derived_metrics": {
       "surface_area_cm2": 55.4
     },
-    "image_url": "https://www.greenerprinter.com/blog/wp-content/uploads/2024/08/jack-hamilton-9SewS6lowEU-unsplash.jpg",
-    "image_source_page": "https://www.greenerprinter.com/blog/what-are-standard-playing-card-dimensions/?srsltid=AfmBOoodvDTBTUs32tWbPam0DXliFxkH970spAoU4Khhx3gNg04JYpyj"
+    "image_url": "/item-images/playing_card_poker.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Playing_card",
+    "image_local": true
   },
   {
     "item_key": "payment_card_id1",
@@ -631,8 +664,9 @@
     "derived_metrics": {
       "surface_area_cm2": 46.2
     },
-    "image_url": "https://b2161880.smushcdn.com/2161880/wp-content/uploads/2019/09/1155.jpg?lossy=1&strip=1&webp=1",
-    "image_source_page": "https://www.paymentsjournal.com/contactless-payments-how-technology-is-changing-the-traveler-experience/"
+    "image_url": "/item-images/payment_card_id1.webp",
+    "image_source_page": "https://www.paymentsjournal.com/contactless-payments-how-technology-is-changing-the-traveler-experience/",
+    "image_local": true
   },
   {
     "item_key": "milk_jug_1gal_full",
@@ -655,8 +689,9 @@
       "surface_area_cm2": 1755,
       "approximate": true
     },
-    "image_url": "https://inplacejh.com/cdn/shop/files/milkjugs.jpg?v=1754763138&width=3840",
-    "image_source_page": "https://inplacejh.com/products/vintage-milk-jug-10-gallon?srsltid=AfmBOooOhx9hRnVC33nKbK0w1gc_aHlzxo13De1BdthWVeWhtrJtOO6W"
+    "image_url": "/item-images/milk_jug_1gal_full.jpg",
+    "image_source_page": "https://inplacejh.com/products/vintage-milk-jug-10-gallon?srsltid=AfmBOooOhx9hRnVC33nKbK0w1gc_aHlzxo13De1BdthWVeWhtrJtOO6W",
+    "image_local": true
   },
   {
     "item_key": "coke_bottle_2l_full",
@@ -678,8 +713,9 @@
       "surface_area_cm2": 1330,
       "approximate": true
     },
-    "image_url": "https://www.reuters.com/resizer/v2/QDCWKLBETVISXDOAYZINI3ROIU.jpg?auth=915ed8caffa775e9b2ba8ed68e299d346996c42584ba85c0b85e4eec80491bee",
-    "image_source_page": "https://www.reuters.com/business/environment/coca-cola-turns-100-recycled-plastic-bottles-us-2021-02-09/"
+    "image_url": "/item-images/coke_bottle_2l_full.webp",
+    "image_source_page": "https://www.reuters.com/business/environment/coca-cola-turns-100-recycled-plastic-bottles-us-2021-02-09/",
+    "image_local": true
   },
   {
     "item_key": "soda_can_12oz_full",
@@ -699,7 +735,8 @@
       "volume_ml": 355,
       "surface_area_cm2": 321
     },
-    "image_url": "https://i5.walmartimages.com/seo/Simple-Houseware-Soda-Can-Beverage-Organizer-and-Dispenser-for-Refrigerator-and-Pantry-2-Pack-Clear_8ce57dff-3c37-4b4c-a5d6-c18f42cf736d.f0b70c3d742da4a1bdbfbad78d4a467d.jpeg",
-    "image_source_page": "https://www.walmart.com/ip/Simple-Houseware-Soda-Can-Beverage-Organizer-and-Dispenser-for-Refrigerator-and-Pantry-2-Pack-Clear/1832500823"
+    "image_url": "/item-images/soda_can_12oz_full.webp",
+    "image_source_page": "https://www.walmart.com/ip/Simple-Houseware-Soda-Can-Beverage-Organizer-and-Dispenser-for-Refrigerator-and-Pantry-2-Pack-Clear/1832500823",
+    "image_local": true
   }
 ]

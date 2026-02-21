@@ -118,7 +118,10 @@ function extractDimensionTarget(item) {
         : { metric: 'dimension', label: 'height', unit: 'mm', value: dim.height }
     }
     case 'cuboid': {
-      const axis = randomPick(['length', 'width', 'height'])
+      const axes = item.item_key === 'smartphone_slab'
+        ? ['length', 'width']
+        : ['length', 'width', 'height']
+      const axis = randomPick(axes)
       return { metric: 'dimension', label: axis, unit: 'mm', value: dim[axis] }
     }
     case 'cube':
