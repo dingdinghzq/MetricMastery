@@ -738,5 +738,196 @@
     "image_url": "/item-images/soda_can_12oz_full.webp",
     "image_source_page": "https://www.walmart.com/ip/Simple-Houseware-Soda-Can-Beverage-Organizer-and-Dispenser-for-Refrigerator-and-Pantry-2-Pack-Clear/1832500823",
     "image_local": true
+  },
+  {
+    "item_key": "smallest_nonzero_angle_deg",
+    "display_name": "Smallest non-zero angle (whole degrees)",
+    "category": "math",
+    "standard_level": "regulated_standard",
+    "derived_metrics": {
+      "angle_deg": 1
+    },
+    "image_url": "/item-images/smallest_nonzero_angle_deg.webp",
+    "image_source_page": "https://www.istockphoto.com/vector/close-up-image-of-a-protractor-gm158196813-22404099",
+    "image_local": true
+  },
+  {
+    "item_key": "hardcover_textbook_standard",
+    "display_name": "Hardcover textbook (typical school size)",
+    "category": "classroom",
+    "standard_level": "common_typical",
+    "dimensions_mm": {
+      "kind": "cuboid",
+      "length": 234,
+      "width": 156,
+      "height": 28,
+      "approximate": true
+    },
+    "image_url": "/item-images/hardcover_textbook_standard.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Textbook",
+    "image_local": true
+  },
+  {
+    "item_key": "clay_brick_modular_us",
+    "display_name": "Clay brick (U.S. modular size)",
+    "category": "construction",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "min": 1800,
+      "max": 2200
+    },
+    "dimensions_mm": {
+      "kind": "cuboid",
+      "length": 194,
+      "width": 92,
+      "height": 57
+    },
+    "derived_metrics": {
+      "volume_ml": 1017,
+      "surface_area_cm2": 684,
+      "density_g_per_cm3": 1.97
+    },
+    "image_url": "/item-images/clay_brick_modular_us.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Brick",
+    "image_local": true
+  },
+  {
+    "item_key": "ti84_calculator",
+    "display_name": "TI-84 graphing calculator",
+    "category": "classroom",
+    "standard_level": "common_typical",
+    "mass_g": {
+      "value": 215
+    },
+    "dimensions_mm": {
+      "kind": "cuboid",
+      "length": 190.5,
+      "width": 88.9,
+      "height": 17
+    },
+    "derived_metrics": {
+      "volume_ml": 288,
+      "surface_area_cm2": 433
+    },
+    "image_url": "/item-images/ti84_calculator.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/TI-84_Plus_series",
+    "image_local": true
+  },
+  {
+    "item_key": "juice_box_200ml",
+    "display_name": "Juice box (200 mL)",
+    "category": "container",
+    "standard_level": "common_typical",
+    "mass_g": {
+      "value": 220,
+      "approximate": true
+    },
+    "dimensions_mm": {
+      "kind": "cuboid",
+      "length": 100,
+      "width": 50,
+      "height": 40,
+      "approximate": true
+    },
+    "derived_metrics": {
+      "volume_ml": 200,
+      "surface_area_cm2": 220
+    },
+    "image_url": "/item-images/juice_box_200ml.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Juice_box",
+    "image_local": true
+  },
+  {
+    "item_key": "classroom_desk_top",
+    "display_name": "Classroom desk top surface",
+    "category": "classroom",
+    "standard_level": "common_typical",
+    "dimensions_mm": {
+      "kind": "rectangle",
+      "width": 600,
+      "height": 450,
+      "approximate": true
+    },
+    "derived_metrics": {
+      "surface_area_cm2": 2700,
+      "surface_area_m2": 0.27,
+      "approximate": true
+    },
+    "image_url": "/item-images/classroom_desk_top.jpg",
+    "image_source_page": "https://marketbrief.edweek.org/education-market/when-will-k-12-classrooms-scrap-those-age-old-rigid-desk-chairs/2019/04",
+    "image_local": true
+  },
+  {
+    "item_key": "classroom_door_us_standard",
+    "display_name": "Classroom door (U.S. standard)",
+    "category": "construction",
+    "standard_level": "regulated_standard",
+    "dimensions_mm": {
+      "kind": "rectangle",
+      "width": 914.4,
+      "height": 2032
+    },
+    "derived_metrics": {
+      "surface_area_cm2": 18581
+    },
+    "image_url": "/item-images/classroom_door_us_standard.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Door",
+    "image_local": true
+  },
+  {
+    "item_key": "notebook_composition",
+    "display_name": "Composition notebook (7.5 x 9.75 in)",
+    "category": "classroom",
+    "standard_level": "common_typical",
+    "mass_g": {
+      "value": 280,
+      "approximate": true
+    },
+    "dimensions_mm": {
+      "kind": "rectangle",
+      "width": 190.5,
+      "height": 247.65
+    },
+    "derived_metrics": {
+      "surface_area_cm2": 472,
+      "diagonal_cm": 31.2
+    },
+    "image_url": "/item-images/notebook_composition.webp",
+    "image_source_page": "https://www.amazon.com/Classic-Wide-Ruled-Composition-Book/dp/B0DC584JYN",
+    "image_local": true
+  },
+  {
+    "item_key": "wood_block_pine",
+    "display_name": "Pine wooden block (classroom sample)",
+    "category": "classroom",
+    "standard_level": "common_typical",
+    "derived_metrics": {
+      "density_g_per_cm3": 0.53,
+      "approximate": true
+    },
+    "image_url": "/item-images/wood_block_pine.webp",
+    "image_source_page": "https://www.amazon.com/Landical-Unfinished-Whittling-Beginners-Christmas/dp/B0CQY3GYX8",
+    "image_local": true
+  },
+  {
+    "item_key": "basketball_size7",
+    "display_name": "Basketball (size 7 standard)",
+    "category": "sports",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "min": 567,
+      "max": 650
+    },
+    "dimensions_mm": {
+      "kind": "sphere",
+      "diameter": 242
+    },
+    "derived_metrics": {
+      "volume_ml": 7420,
+      "surface_area_cm2": 1840
+    },
+    "image_url": "/item-images/basketball_size7.webp",
+    "image_source_page": "https://en.wikipedia.org/wiki/Basketball",
+    "image_local": true
   }
 ]

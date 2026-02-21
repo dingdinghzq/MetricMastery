@@ -35,6 +35,24 @@ function randomPick(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
 
+function pickWeighted(list, getWeight) {
+  const weighted = list
+    .map((item) => ({ item, weight: Math.max(0, getWeight(item) || 0) }))
+    .filter((entry) => entry.weight > 0)
+
+  if (!weighted.length) return null
+
+  const total = weighted.reduce((sum, entry) => sum + entry.weight, 0)
+  let threshold = Math.random() * total
+
+  for (const entry of weighted) {
+    threshold -= entry.weight
+    if (threshold <= 0) return entry.item
+  }
+
+  return weighted[weighted.length - 1].item
+}
+
 function shuffle(list) {
   const arr = [...list]
   for (let i = arr.length - 1; i > 0; i -= 1) {
@@ -173,6 +191,18 @@ function extractDerivedTarget(item) {
   if (Number.isFinite(derived.surface_area_cm2)) {
     candidates.push({ metric: 'derived', label: 'surface area', unit: 'cm²', value: derived.surface_area_cm2 })
   }
+  if (Number.isFinite(derived.surface_area_m2)) {
+    candidates.push({ metric: 'derived', label: 'surface area', unit: 'm²', value: derived.surface_area_m2 })
+  }
+  if (Number.isFinite(derived.diagonal_cm)) {
+    candidates.push({ metric: 'derived', label: 'diagonal', unit: 'cm', value: derived.diagonal_cm })
+  }
+  if (Number.isFinite(derived.density_g_per_cm3)) {
+    candidates.push({ metric: 'derived', label: 'density', unit: 'g/cm³', value: derived.density_g_per_cm3 })
+  }
+  if (Number.isFinite(derived.angle_deg)) {
+    candidates.push({ metric: 'derived', label: 'angle', unit: '°', value: derived.angle_deg })
+  }
 
   if (!candidates.length) return null
   return randomPick(candidates)
@@ -216,7 +246,11 @@ function buildQuestion(item) {
 
   if (!targets.length) return null
 
-  const target = randomPick(targets)
+  const hasDensityMetric = Number.isFinite(item?.derived_metrics?.density_g_per_cm3)
+  const target = hasDensityMetric
+    ? pickWeighted(targets, (candidate) => (candidate.label === 'density' ? 6 : 1))
+    : randomPick(targets)
+
   if (!target) return null
 
   const answerMode = Math.random() > 0.5 ? 'multiple_choice' : 'short_answer'
