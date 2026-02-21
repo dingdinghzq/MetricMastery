@@ -68,11 +68,11 @@ function formatDimensions(dim) {
 function formatDerived(derived) {
   if (!derived) return '—'
   const parts = []
-  if (asNumber(derived.density_g_per_cm3) !== null) parts.push(`ρ ${round(derived.density_g_per_cm3)} g/cm³`)
+  if (asNumber(derived.density_g_per_cm3) !== null) parts.push(`density ${round(derived.density_g_per_cm3)} g/cm^3`)
   else if (asNumber(derived.volume_ml) !== null) parts.push(`V ${round(derived.volume_ml)} mL`)
-  else if (asNumber(derived.surface_area_cm2) !== null) parts.push(`A ${round(derived.surface_area_cm2)} cm²`)
-  else if (asNumber(derived.surface_area_m2) !== null) parts.push(`A ${round(derived.surface_area_m2)} m²`)
-  else if (asNumber(derived.angle_deg) !== null) parts.push(`θ ${round(derived.angle_deg)}°`)
+  else if (asNumber(derived.surface_area_cm2) !== null) parts.push(`A ${round(derived.surface_area_cm2)} cm^2`)
+  else if (asNumber(derived.surface_area_m2) !== null) parts.push(`A ${round(derived.surface_area_m2)} m^2`)
+  else if (asNumber(derived.angle_deg) !== null) parts.push(`angle ${round(derived.angle_deg)} deg`)
   else if (asNumber(derived.diagonal_cm) !== null) parts.push(`diag ${round(derived.diagonal_cm)} cm`)
   return parts.join(' · ') || '—'
 }
