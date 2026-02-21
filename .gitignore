@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+printables/
 
 # Build output
 dist/
