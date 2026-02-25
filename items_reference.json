@@ -929,5 +929,142 @@
     "image_url": "/item-images/basketball_size7.webp",
     "image_source_page": "https://en.wikipedia.org/wiki/Basketball",
     "image_local": true
+  },
+  {
+    "item_key": "compact_disc_120mm",
+    "display_name": "Compact Disc (CD, 120 mm)",
+    "category": "electronics",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "min": 14,
+      "max": 33
+    },
+    "dimensions_mm": {
+      "kind": "disc",
+      "diameter": 120,
+      "thickness": 1.2
+    },
+    "image_url": "/item-images/compact_disc_120mm.png",
+    "image_source_page": "https://en.wikipedia.org/wiki/Optical_disc",
+    "image_local": true
+  },
+  {
+    "item_key": "binder_clip_medium_32mm",
+    "display_name": "Binder clip, medium (32 mm / 1.25 in)",
+    "category": "office",
+    "standard_level": "common_typical",
+    "dimensions_mm": {
+      "kind": "width",
+      "width": 32
+    },
+    "image_url": "/item-images/binder_clip_medium_32mm.jpg",
+    "image_source_page": "https://en.wikipedia.org/wiki/Binder_clip",
+    "image_local": true
+  },
+  {
+    "item_key": "us_half_dollar",
+    "display_name": "U.S. half dollar (50 cents)",
+    "category": "currency",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "value": 11.34
+    },
+    "dimensions_mm": {
+      "kind": "disc",
+      "diameter": 30.61,
+      "thickness": 2.15
+    },
+    "image_url": "/item-images/us_half_dollar.png",
+    "image_source_page": "https://en.wikipedia.org/wiki/Half_dollar_(United_States_coin)",
+    "image_local": true
+  },
+  {
+    "item_key": "us_dollar_coin",
+    "display_name": "U.S. dollar coin",
+    "category": "currency",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "value": 8.1
+    },
+    "dimensions_mm": {
+      "kind": "disc",
+      "diameter": 26.49,
+      "thickness": 2
+    },
+    "image_url": "/item-images/us_dollar_coin.png",
+    "image_source_page": "https://en.wikipedia.org/wiki/Dollar_coin_(United_States)",
+    "image_local": true
+  },
+  {
+    "item_key": "c_lr14_battery",
+    "display_name": "C battery (LR14 size)",
+    "category": "battery",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "value": 65
+    },
+    "dimensions_mm": {
+      "kind": "cylinder",
+      "length": 50,
+      "diameter": 26.2
+    },
+    "image_url": "/item-images/c_lr14_battery.jpg",
+    "image_source_page": "https://en.wikipedia.org/wiki/C_battery",
+    "image_local": true
+  },
+  {
+    "item_key": "d_lr20_battery",
+    "display_name": "D battery (LR20 size)",
+    "category": "battery",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "value": 139
+    },
+    "dimensions_mm": {
+      "kind": "cylinder",
+      "length": 61.5,
+      "diameter": 34.2
+    },
+    "image_url": "/item-images/d_lr20_battery.jpg",
+    "image_source_page": "https://en.wikipedia.org/wiki/D_battery",
+    "image_local": true
+  },
+  {
+    "item_key": "egg_large_usda",
+    "display_name": "Chicken egg, large (U.S. size class)",
+    "category": "food",
+    "standard_level": "regulated_standard",
+    "mass_g": {
+      "min": 56.8,
+      "max": 63.8
+    },
+    "image_url": "/item-images/egg_large_usda.jpg",
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:White_chicken_egg_square.jpg",
+    "image_local": true
+  },
+  {
+    "item_key": "measuring_cup_1cup_us",
+    "display_name": "Measuring cup (1 U.S. cup line)",
+    "category": "kitchen",
+    "standard_level": "regulated_standard",
+    "derived_metrics": {
+      "volume_ml": 236.6
+    },
+    "image_url": "/item-images/measuring_cup_1cup_us.jpg",
+    "image_source_page": "https://en.wikipedia.org/wiki/Measuring_cup",
+    "image_local": true
+  },
+  {
+    "item_key": "light_bulb_a19",
+    "display_name": "Light bulb (A19 form factor)",
+    "category": "household",
+    "standard_level": "regulated_standard",
+    "dimensions_mm": {
+      "kind": "width",
+      "width": 60.3
+    },
+    "image_url": "/item-images/light_bulb_a19.png",
+    "image_source_page": "https://en.wikipedia.org/wiki/A-series_light_bulb",
+    "image_local": true
   }
 ]

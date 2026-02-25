@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const QUIZ_COUNT = 10
+const QUIZ_COUNT = 16
 const POINTS_PER_QUESTION = 5
 
 const hypeMessages = [
@@ -287,6 +287,9 @@ export default function App() {
   const [shortInput, setShortInput] = useState('')
   const [answerResult, setAnswerResult] = useState(null)
   const [history, setHistory] = useState([])
+  const [pendingRedoQuestions, setPendingRedoQuestions] = useState([])
+  const [roundNumber, setRoundNumber] = useState(1)
+  const [quizComplete, setQuizComplete] = useState(false)
 
   useEffect(() => {
     async function load() {
@@ -310,13 +313,7 @@ export default function App() {
   const current = questions[index] ?? null
   const maxScore = questions.length * POINTS_PER_QUESTION
 
-  const summaryTitle = useMemo(() => {
-    const pct = maxScore ? Math.round((score / maxScore) * 100) : 0
-    if (pct >= 90) return 'Legend Status Unlocked 🏆'
-    if (pct >= 70) return 'Certified Smart Cookie 🍪'
-    if (pct >= 50) return 'Solid Brain Moves 🧠'
-    return 'Training Arc Continues 🌱'
-  }, [score, maxScore])
+
 
   function startGame() {
     const picked = shuffle(items).slice(0, Math.min(QUIZ_COUNT, items.length))
@@ -328,6 +325,24 @@ export default function App() {
     setShortInput('')
     setAnswerResult(null)
     setHistory([])
+    setPendingRedoQuestions([])
+    setRoundNumber(1)
+    setQuizComplete(false)
+    setStarted(true)
+  }
+
+  function startRedoRound() {
+    if (!pendingRedoQuestions.length) return
+    setQuestions(shuffle(pendingRedoQuestions))
+    setIndex(0)
+    setScore(0)
+    setSelectedKey(null)
+    setShortInput('')
+    setAnswerResult(null)
+    setHistory([])
+    setPendingRedoQuestions([])
+    setRoundNumber((v) => v + 1)
+    setQuizComplete(false)
     setStarted(true)
   }
 
@@ -352,6 +367,7 @@ export default function App() {
       {
         q: index + 1,
         prompt: current.prompt,
+        question: current,
         result
       }
     ])
@@ -378,6 +394,7 @@ export default function App() {
       {
         q: index + 1,
         prompt: current.prompt,
+        question: current,
         result
       }
     ])
@@ -386,7 +403,18 @@ export default function App() {
   function next() {
     if (!current) return
     if (index + 1 >= questions.length) {
+      const redoQuestions = history
+        .filter((row) => row.result.points < row.result.maxPoints)
+        .map((row) => row.question)
+
       setStarted(false)
+      if (redoQuestions.length) {
+        setPendingRedoQuestions(redoQuestions)
+        setQuizComplete(false)
+      } else {
+        setPendingRedoQuestions([])
+        setQuizComplete(true)
+      }
       return
     }
     setIndex((v) => v + 1)
@@ -395,31 +423,29 @@ export default function App() {
     setAnswerResult(null)
   }
 
-  const gameOver = !started && history.length > 0 && questions.length > 0
-
   return (
     <div className="app-shell">
       <div className="bg-blob blob1" />
       <div className="bg-blob blob2" />
       <main className="card">
         <h1>MetricMastery Quiz Blast 🎉</h1>
-        <p className="subtitle">Estimate item mass, size, volume, or surface area. Mixed question modes. 10 rounds, up to 5 points each.</p>
+        <p className="subtitle">Estimate item mass, size, volume, or surface area. Mixed question modes. 16 rounds, up to 5 points each.</p>
 
         {loading && <p>Loading quiz fuel...</p>}
         {error && <p className="error">{error}</p>}
 
-        {!loading && !error && !started && !gameOver && (
+        {!loading && !error && !started && !pendingRedoQuestions.length && !quizComplete && (
           <section className="panel">
             <h2>Ready to play?</h2>
             <p>{randomPick(hypeMessages)}</p>
-            <button className="btn" onClick={startGame}>Start 10-Question Quiz</button>
+            <button className="btn" onClick={startGame}>Start 16-Question Quiz</button>
           </section>
         )}
 
         {started && current && (
           <section className="panel">
             <div className="status-row">
-              <span>Question {index + 1} / {questions.length}</span>
+              <span>Round {roundNumber} - Question {index + 1} / {questions.length}</span>
               <span>Score: {score} / {maxScore}</span>
             </div>
 
@@ -505,43 +531,30 @@ export default function App() {
             </div>
 
             <button className="btn" onClick={next} disabled={!answerResult}>
-              {index + 1 === questions.length ? 'See Results' : 'Next Question'}
+              {index + 1 === questions.length ? 'Finish Round' : 'Next Question'}
             </button>
           </section>
         )}
 
-        {gameOver && (
+        {!loading && !error && !started && pendingRedoQuestions.length > 0 && (
           <section className="panel">
-            <h2>{summaryTitle}</h2>
-            <p className="big-score">You scored <strong>{score}</strong> / {maxScore}</p>
+            <h2>Redo Round</h2>
+            <p>
+              You have <strong>{pendingRedoQuestions.length}</strong>{' '}
+              question{pendingRedoQuestions.length === 1 ? '' : 's'} below full points.
+              Redo all of them before finishing.
+            </p>
+            <button className="btn" onClick={startRedoRound}>
+              Redo {pendingRedoQuestions.length} Question{pendingRedoQuestions.length === 1 ? '' : 's'}
+            </button>
+          </section>
+        )}
 
-            <div className="result-list">
-              {history.map((row) => (
-                <div
-                  key={row.q}
-                  className={`result-item ${row.result.points === POINTS_PER_QUESTION ? 'ok' : 'nope'}`}
-                >
-                  <span>Q{row.q}</span>
-                  <span>{row.prompt}</span>
-                  <span>Points: {row.result.points} / {row.result.maxPoints}</span>
-                  {row.result.mode === 'multiple_choice' && (
-                    <>
-                      <span>Picked: {row.result.pickedLabel}</span>
-                      <span>Correct: {row.result.correctLabel}</span>
-                    </>
-                  )}
-                  {row.result.mode === 'short_answer' && (
-                    <>
-                      <span>Your answer: {Number.isFinite(row.result.answer) ? formatMetricValue(row.result.answer, row.result.unit) : 'invalid input'}</span>
-                      <span>Target: {formatMetricValue(row.result.expected, row.result.unit)}</span>
-                      <span>Error: {row.result.errorPct !== null ? `${roundMetric(row.result.errorPct)}%` : 'n/a'}</span>
-                    </>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <button className="btn" onClick={startGame}>Play Again</button>
+        {!loading && !error && !started && quizComplete && (
+          <section className="panel">
+            <h2>All Questions Completed</h2>
+            <p>You reached full score on every asked question.</p>
+            <button className="btn" onClick={startGame}>Start 16-Question Quiz</button>
           </section>
         )}
       </main>
