@@ -89,6 +89,22 @@ The output is placed in the `dist/` directory.
 npm run preview
 ```
 
+## Run with Docker
+
+### Build the image
+
+```bash
+docker build -t metricmastery-quiz .
+```
+
+### Run the container
+
+```bash
+docker run --rm -p 8080:8080 metricmastery-quiz
+```
+
+Open `http://localhost:8080` in your browser.
+
 ## Project Structure
 
 ```

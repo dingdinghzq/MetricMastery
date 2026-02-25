@@ -294,7 +294,7 @@ export default function App() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch('/items_reference.json')
+        const res = await fetch(`${import.meta.env.BASE_URL}items_reference.json`)
         if (!res.ok) throw new Error('Could not load item data')
         const data = await res.json()
         if (!Array.isArray(data) || data.length < 4) {
